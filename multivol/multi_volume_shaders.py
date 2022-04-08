@@ -37,7 +37,7 @@
 
 import textwrap
 
-from vispy.visuals.volume import VERT_SHADER
+from vispy.visuals.volume import _VERTEX_SHADER
 
 # Fragment shader
 FRAG_SHADER = """
@@ -163,7 +163,7 @@ def get_shaders(n_volume_max):
 
     color_calculation = textwrap.indent(color_calculation, " " * 12)
 
-    return VERT_SHADER, FRAG_SHADER.format(declarations=declarations,
+    return _VERTEX_SHADER, FRAG_SHADER.format(declarations=declarations,
                                            color_calculation=color_calculation)
 
 if __name__ == "__main__":

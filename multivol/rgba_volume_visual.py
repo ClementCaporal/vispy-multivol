@@ -43,7 +43,7 @@ from vispy.scene.visuals import create_visual_node
 
 import numpy as np
 
-from .rgba_volume_shaders import VERT_SHADER, FRAG_SHADER
+from .rgba_volume_shaders import _VERTEX_SHADER, FRAG_SHADER
 
 
 class RGBAVolumeVisual(VolumeVisual):

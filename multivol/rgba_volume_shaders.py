@@ -1,6 +1,6 @@
 # This file implements a fragment shader that can be used to visualize a cube
 # with arbitrary RGBA values in each pixel.
-# 
+#
 # ===========================================================================
 # Vispy is licensed under the terms of the (new) BSD license:
 #
@@ -36,7 +36,7 @@
 
 import textwrap
 
-from vispy.visuals.volume import VERT_SHADER
+from vispy.visuals.volume import _VERTEX_SHADER
 
 # Fragment shader
 FRAG_SHADER = """
